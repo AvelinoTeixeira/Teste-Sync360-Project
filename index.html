@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Perfil do Usuário</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <div class="container">
+    <section class="user-info">
+      <div class="profile-picture">
+        <img src="img/Avatar.png" alt="Profile Picture">
+      </div>
+      <div class="user-details">
+        <h2 id="name">Nome do Usuário</h2>
+        <p><span>Idade:</span> <span id="age"></span></p>
+        <p><span>Endereço:</span> <span id="address"></span></p>
+        <p><span>Estado:</span> <span id="state"></span></p>
+        <p><span>Biografia:</span> <span id="bio"></span></p>
+      </div>
+    </section>
+
+    <section class="update-form">
+      <h2>Atualizar Informações</h2>
+      <form id="update-form">
+        <label for="new-name">Nome:</label>
+        <input type="text" id="new-name" name="new-name" required>
+
+        <label for="new-age">Idade:</label>
+        <input type="number" id="new-age" name="new-age" required>
+
+        <label for="new-address">Endereço:</label>
+        <input type="text" id="new-address" name="new-address" required>
+
+        <label for="new-state">Estado:</label>
+        <input type="text" id="new-state" name="new-state" required>
+
+
+
+        <label for="new-bio">Biografia:</label>
+        <textarea id="new-bio" name="new-bio" required></textarea>
+
+        <button type="submit">Atualizar</button>
+      </form>
+    </section>
+  </div>
+
+  <script src="main.js"></script>
+</body>
+
+</html>
